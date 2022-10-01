@@ -1,0 +1,33 @@
+---
+interface Props {
+    title: string
+    picture: {
+        src: string
+        alt: string
+    }
+    description: string
+}
+
+const { title, picture, description }: Props = Astro.props
+---
+
+<article class="flex flex-col max-w-xs align-middle mx-auto mt-20">
+    <h2 class="flex max-w-full text-5xl text-white title">{title}</h2>
+    <img src={picture.src} alt={picture.alt} />
+    <p class="text-white description">{description}</p>
+</article>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+    .title {
+        background-image: url("../assets/media/bloodline.png");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        background-size: 9.5rem 0.7rem;
+        text-shadow: 3px 1px #000;
+    }
+    .description {
+        font-family: "Nunito Sans", sans-serif;
+    }
+</style>

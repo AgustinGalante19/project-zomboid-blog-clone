@@ -1,0 +1,23 @@
+---
+import ForumButton from "../components/ForumButton.astro"
+import SteamButton from "./SteamButton.astro"
+import GogButton from "./GogButton.astro"
+---
+
+<header
+    class="container max-w-6xl flex justify-between mx-auto mt-60 flex-wrap"
+>
+    <div class="flex flex-col mb-auto mt-auto">
+        <p class="capitalize text-white text-7xl lol">
+            The ultimate <br /> zombie survival rpg
+        </p>
+    </div>
+    <div class="flex flex-col max-w-full gap-3">
+        <ForumButton /><SteamButton /><GogButton />
+    </div>
+</header>
+<style>
+    .lol {
+        text-shadow: 3px 1px #000;
+    }
+</style>

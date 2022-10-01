@@ -1,0 +1,35 @@
+---
+const { title, img, body, author, date } = Astro.props
+---
+
+<article class="flex flex-col max-w-md">
+    <img src={img.src} alt={img.alt} />
+    <a class="text-white text-2xl cursor-pointer leading-10">
+        {title}
+        <span class="arrow">{">"}</span>
+    </a>
+    <p class="text-white text-body text-xs">{body}</p>
+    <footer class="flex flex-row">
+        <span class="author">{author}</span>
+        <span class="mx-2"> | </span>
+        <span>{date}</span>
+    </footer>
+</article>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+    .text-body {
+        font-family: "Nunito Sans", sans-serif;
+    }
+    .arrow {
+        color: #cd003b;
+    }
+    footer span {
+        font-family: "Nunito Sans", sans-serif;
+        color: white;
+        font-size: 0.8em;
+    }
+    .author {
+        color: #cd003b !important;
+    }
+</style>

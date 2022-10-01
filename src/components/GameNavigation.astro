@@ -1,0 +1,123 @@
+---
+import redditSvg from "../assets/media/reddit.svg"
+import steamSvg from "../assets/media/steam.svg"
+import facebookSvg from "../assets/media/facebook.svg"
+import twitterSvg from "../assets/media/twitter.svg"
+---
+
+<!--  -->
+<nav
+    class="container xl:visible bg-[#0d191f] max-w-full py-3 flex navigation shadow-xl shadow-gray-900 nav-shadow"
+>
+    <div class="container max-w-6xl flex justify-between mx-auto items-center">
+        <section>
+            <ul class="list-none">
+                <li class="text-[#999999] text-sm inline-block mx-1">
+                    Stable Build: 41.73 <span class="text-white">|</span>
+                </li>
+                <li class="text-[#999999] text-sm inline-block mx-1">
+                    IWBUMS Beta: 41.76 <span class="text-white">|</span>
+                </li>
+                <li
+                    class="text-[#999999] text-sm inline-block hover:text-red-700 mx-1"
+                >
+                    <a
+                        href="https://projectzomboid.com/blog/news/2017/02/buildstatus/"
+                    >
+                        Version history</a
+                    >
+                    <span class="text-[#999999]">|</span>
+                </li>
+                <li
+                    class="text-[#999999] text-sm inline-block hover:text-red-700 mx-1"
+                >
+                    <a href="https://pzwiki.net/wiki/Main_Page">Wiki</a>
+                </li>
+            </ul>
+        </section>
+        <section class="flex">
+            <span class="text-white text-sm mr-4">Follow us</span>
+            <ul class="list-none flex flex-row gap-1">
+                <li class="inline-block">
+                    <a
+                        href="https://www.reddit.com/r/projectzomboid/"
+                        target="_blank"
+                    >
+                        <img
+                            src={redditSvg}
+                            alt="reddit svg"
+                            width="20"
+                            height="20"
+                        />
+                    </a>
+                </li>
+                <li class="inline-block">
+                    <a
+                        href="https://www.reddit.com/r/projectzomboid/"
+                        target="_blank"
+                    >
+                        <img
+                            src={steamSvg}
+                            alt="steam svg"
+                            width="20"
+                            height="20"
+                        />
+                    </a>
+                </li>
+                <li class="inline-block">
+                    <a
+                        href="https://www.reddit.com/r/projectzomboid/"
+                        target="_blank"
+                    >
+                        <img
+                            src={facebookSvg}
+                            alt="facebook svg"
+                            width="20"
+                            height="20"
+                        />
+                    </a>
+                </li>
+                <li class="inline-block">
+                    <a
+                        href="https://www.reddit.com/r/projectzomboid/"
+                        target="_blank"
+                    >
+                        <img
+                            src={twitterSvg}
+                            alt="twitter svg"
+                            width="20"
+                            height="20"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+    @media (max-width: 720px) {
+        .navigation {
+            visibility: hidden;
+        }
+    }
+
+    ul li {
+        font-family: "Nunito Sans", sans-serif;
+    }
+
+    ul li a {
+        font-family: "Nunito Sans", sans-serif;
+        color: white;
+    }
+    ul li a:hover {
+        color: #b91c1c;
+    }
+
+    .nav-shadow {
+        -webkit-box-shadow: 0px 55px 47px 27px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: 0px 55px 47px 27px rgba(0, 0, 0, 0.63);
+        box-shadow: 0px 55px 47px 27px rgba(0, 0, 0, 0.63);
+    }
+</style>

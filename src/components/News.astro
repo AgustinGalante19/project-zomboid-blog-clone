@@ -1,0 +1,49 @@
+---
+import New from "./New.astro"
+import news from "../data/news"
+---
+
+<section class="container max-w-6xl mx-auto ">
+    <div class="title linea">
+        <div class="bg-img">
+            <h2 class="text-white text-7xl flex">LATEST NEWS</h2>
+        </div>
+    </div>
+    <article class="flex flex-row gap-3">
+        <New
+            title={news[0].title}
+            img={news[0].img}
+            body={news[0].body}
+            author={news[0].author}
+            date={news[0].date}
+        />
+        <New
+            title={news[1].title}
+            img={news[1].img}
+            body={news[1].body}
+            author={news[1].author}
+            date={news[1].date}
+        />
+        <New
+            title={news[2].title}
+            img={news[2].img}
+            body={news[2].body}
+            author={news[2].author}
+            date={news[2].date}
+        />
+    </article>
+</section>
+<style>
+    .bg-img {
+        padding: 40px 0px;
+        z-index: 3;
+        background-image: url("../assets/media/blood.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+
+    .linea {
+        border-bottom: 1px solid #cd003b;
+        margin-bottom: 20px;
+    }
+</style>

@@ -1,0 +1,20 @@
+---
+import GameNavigation from "../components/GameNavigation.astro"
+import Navigation from "../components/Navigation.astro"
+import Layout from "../layouts/Layout.astro"
+import Main from "../components/Main.astro"
+import Header from "../components/Header.astro"
+import About from "../components/About.astro"
+import News from "../components/News.astro"
+---
+
+<Layout title="Home">
+    <Main>
+        <GameNavigation />
+        <Navigation />
+        <Header />
+        <About />
+    </Main>
+
+    <News />
+</Layout>

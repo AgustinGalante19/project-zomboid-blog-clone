@@ -1,0 +1,37 @@
+---
+import Article from "./Article.astro"
+
+const descriptions = [
+    "Surviving isn’t just about blowing zombie heads off. Depression, starvation, loneliness, infection... Just some of the things to deal with...",
+    "Craft items to help you stay alive. Whether it’s weapons, food or a plank of wood nailed to a door...",
+    "Protect yourself and your allies from the relentless horde with a huge range of weapons and defenses.",
+]
+---
+
+<section class="flex container flex-row max-w-6xl mx-auto flex-wrap gap-20">
+        <Article
+            title="Survive"
+            description={descriptions[0]}
+            picture={{
+                src: "https://projectzomboid.com/blog/content/uploads/2022/01/Survive.jpg",
+                alt: "in game survive image",
+            }}
+        />
+        <Article
+            title="Build"
+            description={descriptions[1]}
+            picture={{
+                src: "https://projectzomboid.com/blog/content/uploads/2022/01/build.jpg",
+                alt: "in game build image",
+            }}
+        />
+
+        <Article
+            title="Defend"
+            description={descriptions[2]}
+            picture={{
+                src: "https://projectzomboid.com/blog/content/uploads/2022/01/defend.jpg",
+                alt: "in game defend image",
+            }}
+        />
+</section>

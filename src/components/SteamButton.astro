@@ -1,0 +1,40 @@
+---
+import steamSvg from "../assets/media/steam.svg"
+import platformsImg from "../assets/brand/platforms.png"
+---
+
+<div
+    class="bg-[#cd003b] rounded-md hover:bg-[#b31d47] transition-colors cursor-pointer btn-1"
+>
+    <a class="text-white mx-auto max-h-20 my-auto">
+        <div class="flex flex-row gap-3">
+            <img src={steamSvg} width="50" height="50" />
+            <div class="flex flex-col mr-16">
+                <p class="text-center text-3xl text-bold my-auto">
+                    BUY ON STEAM
+                </p>
+                <p class="text-2xl">£15.99</p>
+            </div>
+        </div>
+        <div class="flex flex-row platform">
+            <img
+                src={platformsImg}
+                class="flex"
+                alt="platforms icons"
+                width="60"
+                height="30"
+            />
+        </div>
+    </a>
+</div>
+
+<style>
+    .btn-1 {
+        display: flex;
+        padding: 10px 15px;
+    }
+    .platform img {
+        display: block;
+        margin-left: auto !important;
+    }
+</style>

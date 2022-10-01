@@ -1,0 +1,43 @@
+---
+import gogSvg from "../assets/media/gog.svg"
+import platformsImg from "../assets/brand/platforms.png"
+---
+
+<div
+    class="bg-[#471666] rounded-md hover:bg-[#3f135a] transition-colors cursor-pointer btn-1"
+>
+    <a class="text-white mx-auto my-auto">
+        <div class="flex flex-row gap-3">
+            <img class="logo" src={gogSvg} width="80" />
+            <div class="flex flex-col mr-16">
+                <p class="text-center text-3xl text-bold my-auto">BUY ON Gog</p>
+                <p class="text-2xl">£15.99</p>
+            </div>
+        </div>
+        <div class="flex flex-row platform">
+            <img
+                src={platformsImg}
+                class="flex"
+                alt="platforms icons"
+                width="60"
+                height="30"
+            />
+        </div>
+    </a>
+</div>
+
+<style>
+    .btn-1 {
+        display: flex;
+        padding: 10px 15px;
+    }
+    .platform img {
+        display: block;
+        margin-left: auto !important;
+    }
+    @media (max-width: 1024px) {
+        .logo {
+            visibility: hidden !important;
+        }
+    }
+</style>

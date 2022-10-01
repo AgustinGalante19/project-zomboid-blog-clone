@@ -1,0 +1,81 @@
+---
+import indieLogo from "../assets/brand/indie-logo.png"
+import pzLogo from "../assets/brand/pz-logo.png"
+---
+
+<nav class="flex container max-w-full">
+    <div class="container max-w-6xl flex justify-between items-center mx-auto">
+        <div>
+            <img
+                src={pzLogo}
+                alt="project zomboid logo"
+                width="140"
+                height="90"
+            />
+        </div>
+        <div>
+            <ul class="list-none">
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">Home</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">The Game</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">News</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">Forum</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">Support</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">Game map</a
+                    >
+                </li>
+                <li class="inline-block">
+                    <a
+                        class="nav-item text-white text-xl inline-block mx-1"
+                        href="/">Jobs</a
+                    >
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src={indieLogo} alt="indie logo" width="80" height="100" />
+        </div>
+    </div>
+</nav>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    .nav-item {
+        font-family: "Bebas Neue", sans-serif, cursive;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        padding: 0px 11px;
+    }
+    .nav-item:hover {
+        background-image: url("../assets/media/blood.png");
+        background-position: center;
+        background-size: 4rem;
+        background-repeat: no-repeat;
+    }
+</style>
