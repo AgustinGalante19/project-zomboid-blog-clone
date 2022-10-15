@@ -3,9 +3,9 @@ import indieLogo from "../assets/brand/indie-logo.png"
 import pzLogo from "../assets/brand/pz-logo.png"
 ---
 
-<nav class="flex container max-w-full">
-    <div class="container max-w-6xl flex justify-between items-center mx-auto">
-        <div>
+<nav class="container mx-auto max-w-6xl">
+    <div class="links flex justify-between">
+        <div class="block">
             <img
                 src={pzLogo}
                 alt="project zomboid logo"
@@ -13,56 +13,63 @@ import pzLogo from "../assets/brand/pz-logo.png"
                 height="90"
             />
         </div>
-        <div>
-            <ul class="list-none">
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">Home</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">The Game</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">News</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">Forum</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">Support</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">Game map</a
-                    >
-                </li>
-                <li class="inline-block">
-                    <a
-                        class="nav-item text-white text-xl inline-block mx-1"
-                        href="/">Jobs</a
-                    >
-                </li>
-            </ul>
-        </div>
+        <ul class="list-none">
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">Home</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">The Game</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">News</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">Forum</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">Support</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">Game map</a
+                >
+            </li>
+            <li class="inline-block">
+                <a
+                    class="nav-item text-white text-xl inline-block mx-1"
+                    href="/">Jobs</a
+                >
+            </li>
+        </ul>
         <div>
             <img src={indieLogo} alt="indie logo" width="80" height="100" />
         </div>
     </div>
+    <div class="bg-red-400 inline-block"></div>
+    <section class="pz-logo">
+        <img src={pzLogo} alt="project zomboid logo" width="140" height="90" />
+    </section>
+    <section class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </section>
 </nav>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
@@ -77,5 +84,43 @@ import pzLogo from "../assets/brand/pz-logo.png"
         background-position: center;
         background-size: 4rem;
         background-repeat: no-repeat;
+    }
+
+    .pz-logo {
+        top: 0.75rem;
+        left: 1rem;
+        position: absolute;
+        flex-direction: column;
+        display: none;
+    }
+
+    .toggle-button {
+        top: 2.3rem;
+        right: 1rem;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 910px) {
+        .toggle-button {
+            display: flex;
+        }
+        .pz-logo {
+            display: flex;
+        }
+        .links {
+            display: none;
+        }
     }
 </style>

@@ -2,7 +2,7 @@
 const { title, img, body, author, date } = Astro.props
 ---
 
-<article class="flex flex-col max-w-md">
+<article class="flex flex-col max-w-xs mx-auto">
     <img src={img.src} alt={img.alt} />
     <a class="text-white text-2xl cursor-pointer leading-10">
         {title}
@@ -11,7 +11,7 @@ const { title, img, body, author, date } = Astro.props
     <p class="text-white text-body text-xs">{body}</p>
     <footer class="flex flex-row">
         <span class="author">{author}</span>
-        <span class="mx-2"> | </span>
+        <span class="mx-2"> |</span>
         <span>{date}</span>
     </footer>
 </article>
@@ -31,5 +31,10 @@ const { title, img, body, author, date } = Astro.props
     }
     .author {
         color: #cd003b !important;
+    }
+    img {
+        width: 100%;
+        height: 12em;
+        object-fit: cover;
     }
 </style>

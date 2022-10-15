@@ -3,3 +3,22 @@
 * {
     font-family: "Bebas Neue", sans-serif, cursive;
 }
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px auto 15px;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .main-header {
+        justify-content: center;
+    }
+
+    .main-header p {
+        text-align: center;
+    }
+
+}
